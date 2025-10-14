@@ -1,0 +1,71 @@
+.content {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.content__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(137, 121, 103);
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.confirm__form__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.confirm__form__table th,
+.confirm__form__table td {
+    padding: 20px 22px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.confirm__form__table th {
+    background: rgba(137, 121, 103);
+    color: white;
+    width: 35%;
+    text-align: left;
+}
+
+.confirm__form__table td {
+    color: rgba(137, 121, 103);
+}
+
+.confirm__form__button {
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    
+}
+
+.confirm__form__button__submit {
+    width:80px;
+    padding: 10px 10px;
+    border: none;
+    color:white;
+    background-color: rgb(112, 88, 60);
+    cursor: pointer;
+}
+
+.confirm__form__button__back {
+    width: 80px;
+    padding: 10px 10px 5 10px;
+    border: none;
+    border-bottom: 1px solid rgb(112, 88, 60);
+    
+    background-color: white;
+    color: rgb(112, 88, 60);
+    cursor: pointer;
+    }
+
+
+
+
+

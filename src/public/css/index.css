@@ -1,0 +1,110 @@
+/* ===== 全体 ===== */
+.content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content__title {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(137, 121, 103);
+    margin-bottom: 30px;
+}
+
+/* ===== フォーム ===== */
+.content__form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: rgb(137, 121, 103);
+}
+
+.form__group {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: start;
+    margin-bottom: 24px;
+    gap: 12px 40px;
+}
+
+.form__group label {
+    text-align: left;
+    font-weight: bold;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.form__group label span {
+    color: #d33;
+    margin-left: 4px;
+}
+
+
+.form__group .form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+.inline-inputs {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+.name__input,
+.email-input,
+.address_input,
+.building__input,
+.category__select,
+.detail__textarea {
+    flex: 1;
+    max-width: 100%;
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.tel-input {
+    width: 80px;
+    text-align: center;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.detail__textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+
+.form__error {
+    color: #d33;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+
+.form__button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form__button button {
+    background-color: #7a5c47;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form__button button:hover {
+    background-color: #5a4634;
+}

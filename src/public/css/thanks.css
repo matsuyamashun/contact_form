@@ -1,0 +1,31 @@
+.background-text {
+position: absolute;
+font-size: 300px;
+color: rgba(92, 69, 53, 0.08);
+z-index: 0;
+user-select: none;
+pointer-events: none;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.content__title {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color:rgb(137, 121, 103);
+    margin-top: 150px;
+}
+
+.content__button {
+    background-color: #5c4535;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
