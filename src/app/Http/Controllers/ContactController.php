@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\categories;
+use App\Models\Category;
 use App\Models\Contact;
 use App\Http\Requests\ContactRequest;
 
@@ -12,7 +12,7 @@ class ContactController extends Controller
     // フォーム表示
     public function index()
     {
-        $categories = Categories::all();
+        $categories = Category::all();
         return view('index', compact('categories'));
     }
 
@@ -20,7 +20,7 @@ class ContactController extends Controller
     public function confirm(ContactRequest $request)
     {
         $contact = $request->all();
-        $category = Categories::find($contact['category_id']);
+        $category = Category::find($contact['category_id']);
         return view('confirm', compact('contact', 'category'));
     }
 
