@@ -1,4 +1,4 @@
-/* ===== 全体 ===== */
+
 .content {
     text-align: center;
     margin-bottom: 40px;
@@ -11,7 +11,6 @@
     margin-bottom: 30px;
 }
 
-/* ===== フォーム ===== */
 .content__form {
     width: 100%;
     max-width: 800px;

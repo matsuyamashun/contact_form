@@ -103,3 +103,8 @@ body {
     cursor: pointer;
     margin-left: 130px;
 }
+
+.error{
+    color: red;
+    margin-top: 3px;
+}

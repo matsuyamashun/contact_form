@@ -10,7 +10,7 @@ body {
     position: relative;
     background-color: #fff;
     padding: 20px 0;
-   
+   border-bottom: 1px solid #ddd;
 }
 
 
@@ -102,4 +102,9 @@ body {
     border: none;
     cursor: pointer;
     margin-left: 130px;
+}
+
+.error{
+    color:red;
+    margin-top: 3px;
 }

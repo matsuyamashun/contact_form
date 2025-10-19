@@ -16,7 +16,7 @@
 <table class="confirm__form__table">
     <tr>
         <th>お名前</th>
-        <td>{{$contact['last_name']}}{{$contact['first_name']}}
+        <td>{{$contact['last_name']}}　{{$contact['first_name']}}
         <input type="hidden" name="last_name" value="{{$contact['last_name']}}" readonly />
         <input type="hidden" name="first_name" value="{{$contact['first_name']}}" readonly />
         </td>

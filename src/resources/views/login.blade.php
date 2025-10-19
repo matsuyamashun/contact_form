@@ -24,17 +24,23 @@
     <h2 class="main__title">Login</h2>
 
     <div class="content">
-      <form class="register__form" action="" method="POST">
+      <form class="register__form" action="{{ route('login')}}" method="POST">
         @csrf
         
         <div class="form__group">
           <label for="email">メールアドレス</label>
           <input type="email" id="email" name="email" placeholder="例）test@example.com" value="{{ old('email')}}">
+          @error('email')
+            <div class="error">{{$message}}</div>
+          @enderror
         </div>
 
         <div class="form__group">
           <label for="password">パスワード</label>
           <input type="password" id="password" name="password" placeholder="例）coachtech1106">
+          @error('password')
+          <div class="error">{{$message}}</div>
+          @enderror
         </div>
       
 
