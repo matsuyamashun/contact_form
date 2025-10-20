@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\categories;
+use App\Models\Category;
 use Illuminate\Support\Facades\DB;
 
 class CategorySeeder extends Seeder
@@ -17,7 +17,7 @@ class CategorySeeder extends Seeder
     {
          DB::statement('SET FOREIGN_KEY_CHECKS=0;');
          
-               DB::table('categories')->truncate();
+         DB::table('categories')->truncate();
         $categories = [
             '商品のお届けについて',
             '商品の交換について',
@@ -28,7 +28,7 @@ class CategorySeeder extends Seeder
 
         foreach ($categories as $category)
         {
-            categories::create(['content'=>$category]);
+            Category::create(['content'=>$category]);
         }
     }
 }
