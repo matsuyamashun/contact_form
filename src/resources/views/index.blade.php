@@ -33,9 +33,9 @@
     <div class="form__group">
         <label>性別 <span>※</span></label>
         <div class="content__form__name-input">
-            <label><input class="gender-input" type="radio" name="gender" value="0" {{ old('gender')=='1' ? 'checked' : '' }}>男性</label>
-            <label><input class="gender-input" type="radio" name="gender" value="1" {{ old('gender')=='2' ? 'checked' : '' }}>女性</label>
-            <label><input class="gender-input" type="radio" name="gender" value="2" {{ old('gender')=='3' ? 'checked' : '' }}>その他</label>
+            <label><input class="gender-input" type="radio" name="gender" value="0" {{ old('gender')=='0' ? 'checked' : '' }}>男性</label>
+            <label><input class="gender-input" type="radio" name="gender" value="1" {{ old('gender')=='1' ? 'checked' : '' }}>女性</label>
+            <label><input class="gender-input" type="radio" name="gender" value="2" {{ old('gender')=='2' ? 'checked' : '' }}>その他</label>
         </div>
         @error('gender')
             <div class="form__error">{{ $message }}</div>
